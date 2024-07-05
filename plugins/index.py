@@ -93,13 +93,13 @@ async def send_for_index(bot, message):
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             buttons = [
-                [ InlineKeyboardButton("📝✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧📝", callback_data="rename") ],
-                [ InlineKeyboardButton('📇✧✧  S𝚝ar𝚝 iŋdᗴＸi𝚗g  ✧✧📇',callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')],
-                [ InlineKeyboardButton('⨳  C L Ф S Ξ  ⨳', callback_data='cancel'),]
+                [ InlineKeyboardButton("📝✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧📝", callback_data="rename") ],
+                [ InlineKeyboardButton('📇✧✧  𝑺𝑻𝑨𝑹𝑻 𝑰𝑵𝑫𝑬𝑿𝑰𝑵𝑮  ✧✧📇',callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')],
+                [ InlineKeyboardButton('⨳  ꉓ꒒ꂦꌗꍟ  ⨳', callback_data='cancel'),]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             return await message.reply(
-                f'\n⨳ *•.¸♡ LΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**__What do you want me to do with this file.?__**\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`',
+                f'\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n**__What do you want me to do with this file.?__**\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`',
                 reply_to_message_id=message.id,
                 reply_markup=reply_markup)
         else:
@@ -140,37 +140,37 @@ async def send_for_index(bot, message):
                            reply_markup=reply_markup)
     if (LAZY_MODE == True):
         if message.from_user.id in LAZY_RENAMERS:
-            k = await message.reply('🎉\n\n\n❤️ Thank You For the Contribution, Wait For My Moderators to verify the files.\n\n\n🎁')
+            k = await message.reply('🎉\n\n\n❤️ Thank You For the Contribution And I Appreciate This, Wait For My Moderators to verify the files.\n\n\n🎁')
             buttons = [
-                        [InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="rename") ],
-                        [InlineKeyboardButton('⨳  C L Ф S Ξ  ⨳', callback_data='cancel')]]
+                        [InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="rename") ],
+                        [InlineKeyboardButton('⨳  ꉓ꒒ꂦꌗꍟ  ⨳', callback_data='cancel')]]
             reply_markup = InlineKeyboardMarkup(buttons)
             file = getattr(message, message.media.value)
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             await message.reply(
-                                f".\n⨳ *•.¸♡ LΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\nBecause you are an Authentic user, please don't hesitate to ask me for any other help...\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`\n\nYou can simply close this window or perform following actions, it's upon you",
+                                f".\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\nBecause you are an Authentic user, please don't hesitate to ask me for any other help...\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`\n\nYou can simply close this window or perform following actions, it's upon you",
                                 reply_to_message_id=message.id,
                                 reply_markup=reply_markup)
             await asyncio.sleep(600)
             await k.delete()
         else :      
-            await message.reply('🎉\n\n\n❤️ Thank You For the Contribution, Wait For My Moderators to verify the files.\n\n\n🎁')
+            await message.reply('🎉\n\n\n❤️ Thank You For the Contribution And I Appreciate This, Wait For My Moderators to verify the files.\n\n\n🎁')
             buttons = [
-                        [InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="requireauth") ],
-                        [InlineKeyboardButton('⨳  C L Ф S Ξ  ⨳', callback_data='cancel')]]
+                        [InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="requireauth") ],
+                        [InlineKeyboardButton('⨳  ꉓ꒒ꂦꌗꍟ  ⨳', callback_data='cancel')]]
             reply_markup = InlineKeyboardMarkup(buttons)
             file = getattr(message, message.media.value)
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             k = await message.reply(
-                                f"\n⨳ *•.¸♡ LΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n🤩 Do you know ADX can do a lot of things at a time...\nWould you like to try some of it's amazing features... \n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`",
+                                f"\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n🤩 Do you know ADX can do a lot of things at a time...\nWould you like to try some of it's amazing features... \n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`",
                                 reply_to_message_id=message.id,
                                 reply_markup=reply_markup)
             await asyncio.sleep(600)
             await k.delete()
     else:
-        await message.reply('🎉\n\n\n❤️ Thank You For the Contribution, Wait For My Moderators to verify the files.\n\n\n🎁')
+        await message.reply('🎉\n\n\n❤️ Thank You For the Contribution And I Appreciate This, Wait For My Moderators to verify the files.\n\n\n🎁')
  
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
