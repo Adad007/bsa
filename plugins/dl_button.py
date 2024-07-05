@@ -202,7 +202,7 @@ async def ddl_call_back(client, query):
                     reply_to_message_id=message_idx,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        script.LAZY_UPLOAD_START.format(custom_file_name),
+                        script.ADX_UPLOAD_START.format(custom_file_name),
                         query.message,
                         start_time
                     )
@@ -227,7 +227,7 @@ async def ddl_call_back(client, query):
                     reply_to_message_id=message_idx,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        script.LAZY_UPLOAD_START.format(custom_file_name),
+                        script.ADX_UPLOAD_START.format(custom_file_name),
                         query.message,
                         start_time
                     )
@@ -251,7 +251,7 @@ async def ddl_call_back(client, query):
                     promb=thumbnail,
                     repgress=progress_for_pyrogram,
                     progress_args=(
-                        script.LAZY_UPLOAD_START.format(custom_file_name),
+                        script.ADX_UPLOAD_START.format(custom_file_name),
                         query.message,
                         start_time
                     )
@@ -290,7 +290,7 @@ async def download_coroutine(bot, session, custom_file_name, url, file_name, cha
         await bot.edit_message_text(
             chat_id,
             message_id,
-            text=""""**ღ♡ ɪɴɪᴛɪᴀᴛɪɴɢ ʟᴀᴢʏ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ ♡♪** \n⬇️⏬ `{}`\n🧬**ѕιzє:**`{}`
+            text=""""**ღ♡ ɪɴɪᴛɪᴀᴛɪɴɢ ADX ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ ♡♪** \n⬇️⏬ `{}`\n🧬**ѕιzє:**`{}`
             """.format(xLAZY_BAAPUx_u_name, humanbytes(total_length))
         )
         with open(file_name, "wb") as f_handle:
@@ -316,7 +316,7 @@ async def download_coroutine(bot, session, custom_file_name, url, file_name, cha
                     xxLAZY_BAPUXX_estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
                     template_name = custom_file_name if custom_file_name else "**⚠ You haven't given any custom name...**"
 
-                    xLDx = f"**ღ♡ ʀᴜɴɴɪɴɢ ʟᴀᴢʏ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ ♡♪**\n**ᵉⁿʲᵒʸ ˢᵘᵖᵉʳᶠᵃˢᵗ ᵈᵒʷⁿˡᵒᵈ ᵇʸ [ᴸᵃᶻʸᴰᵉᵛᵉˡᵒᵖᵉʳʳ](https://t.me/LazyDeveloperr)◔_◔** \n\n**░░✩ 📂𝐎𝐑𝐆 𝐅𝐈𝐋𝐄𝐍𝐀𝐌𝐄 ✩ **\n<code>{xLAZY_BAAPUx_u_name}</code>\n\n**░░✩ 📝𝐍𝐄𝐖 𝐍𝐀𝐌𝐄 ✩ **\n<code>{template_name}</code>\n\n ☼﹍︿﹍ⲯ﹍︿﹍﹍︿﹍ⲯ﹍︿﹍☼\n⚡️**Done:{tp}**%| 🧬ѕιzє: {xxLAZY_BAPUXX_total_size}"
+                    xLDx = f"**ღ♡ ʀᴜɴɴɪɴɢ ADX ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ ♡♪**\n**ᵉⁿʲᵒʸ ˢᵘᵖᵉʳᶠᵃˢᵗ ᵈᵒʷⁿˡᵒᵈ ᵇʸ [ᴀᴅx ᴅᴇᴠᴏʟᴇᴍᴘᴍᴇɴᴛs](https://t.me/+qYUk3fAS_-ZlODE9)◔_◔** \n\n**░░✩ 📂𝐎𝐑𝐆 𝐅𝐈𝐋𝐄𝐍𝐀𝐌𝐄 ✩ **\n<code>{xLAZY_BAAPUx_u_name}</code>\n\n**░░✩ 📝𝐍𝐄𝐖 𝐍𝐀𝐌𝐄 ✩ **\n<code>{template_name}</code>\n\n ☼﹍︿﹍ⲯ﹍︿﹍﹍︿﹍ⲯ﹍︿﹍☼\n⚡️**Done:{tp}**%| 🧬ѕιzє: {xxLAZY_BAPUXX_total_size}"
                     progress = "{0}{1}".format(
                         ''.join(["█" for i in range(math.floor(percentage / 5))]),
                         ''.join(["░" for i in range(20 - math.floor(percentage / 5))]))
