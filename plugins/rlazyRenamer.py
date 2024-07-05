@@ -47,9 +47,9 @@ async def rename_start(client, message):
             file = getattr(message, message.media.value)
             filesize = humanize.naturalsize(file.file_size) 
             filename = file.file_name
-            text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
-            buttons = [[ InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="rename") ],
-                       [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
+            text = f"""\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
+            buttons = [[ InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="rename") ],
+                       [ InlineKeyboardButton("⨳  ꉓꂦ꒒ꂦꌗꍟ  ⨳", callback_data="cancel") ]]
             await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
 
         elif message.from_user.id in LAZY_RENAMERS :
@@ -57,16 +57,16 @@ async def rename_start(client, message):
             filesize = humanize.naturalsize(file.file_size) 
             filename = file.file_name
             try:
-                text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
-                buttons = [[ InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="rename") ],
-                           [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
+                text = f"""\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
+                buttons = [[ InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="rename") ],
+                           [ InlineKeyboardButton("⨳  ꉓꂦ꒒ꂦꌗꍟ Ξ  ⨳", callback_data="cancel") ]]
                 await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
                 await sleep(FLOOD)
             except FloodWait as e:
                 await sleep(e.value)
-                text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
-                buttons = [[ InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="rename") ],
-                           [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
+                text = f"""\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
+                buttons = [[ InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="rename") ],
+                           [ InlineKeyboardButton("⨳  ꉓꂦ꒒ꂦꌗꍟ  ⨳", callback_data="cancel") ]]
                 await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
             except:
                 pass
@@ -74,9 +74,9 @@ async def rename_start(client, message):
             file = getattr(message, message.media.value)
             filesize = humanize.naturalsize(file.file_size) 
             filename = file.file_name
-            text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
-            buttons = [[ InlineKeyboardButton("📝✧✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✧📝", callback_data="requireauth") ],
-                        [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
+            text = f"""\n⨳ *•.¸♡ A͎D͎X͎ ͎M͎O͎D͎E͎ ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n\n**🎞File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`"""
+            buttons = [[ InlineKeyboardButton("📝✧✧ 𝑺𝑻𝑨𝑹𝑻 𝑹𝑬𝑵𝑨𝑴𝑰𝑵𝑮 ✧✧📝", callback_data="requireauth") ],
+                        [ InlineKeyboardButton("⨳  ꉓꂦ꒒ꂦꌗꍟ  ⨳", callback_data="cancel") ]]
             await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
     else:
         return
